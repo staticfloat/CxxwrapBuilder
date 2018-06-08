@@ -2,8 +2,8 @@ using BinaryBuilder
 
 # Collection of sources required to build Ogg
 sources = [
-    "https://github.com/JuliaInterop/libcxxwrap-julia.git" =>
-    "3b3a9b96a1c8e099ddec947dc0c48d8d3ff9617f",
+    "https://github.com/JuliaInterop/libcxxwrap-julia/archive/v0.2.3.tar.gz" =>
+    "705261b9c3e73a501284fc465d15b85bc17f2864cd7c261d5267de7350f9bce6",
 ]
 
 # Bash recipe for building across all platforms
@@ -13,7 +13,7 @@ cd /usr/local
 curl -L 'https://julialang-s3.julialang.org/bin/linux/x64/0.6/julia-0.6.3-linux-x86_64.tar.gz' | tar -zx --strip-components=1
 
 # Build libcxxwrap
-cd $WORKSPACE/srcdir/libcxxwrap-julia
+cd $WORKSPACE/srcdir/libcxxwrap-julia*
 mkdir build && cd build
 cmake -DJulia_EXECUTABLE=$(which julia) -DCMAKE_INSTALL_PREFIX=${prefix} ..
 VERBOSE=ON cmake --build . --config Debug --target install
