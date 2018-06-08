@@ -29,7 +29,7 @@ deploy:
   api_key:
     # Note; this api_key is only valid for staticfloat/CxxwrapBuilder; you need
     # to make your own: https://docs.travis-ci.com/user/deployment/releases/
-    secure: 
+    secure: AqkGwSQwam1U0+lAEzIpw/XOzn74IxkSmp4KGY55p0Mb2EIfD/bQqyfDWRCulRjJumrFlfkpJQPpgeu0z45KDc4yA2TRkAId7kNA8kXNzJUNuCuJIsTGc4C2jk1GapRQRNApqe3JaDwRYAt5vOiAQw4uHHkEo54+NUCxh93f0KrZDj224UH1l93UeWYhxZf4QNqeqaAfXfmhmKnkppsXpxsi9gBV+1pRA3l0GPScCr4yg9QQmnYYdFxL76GxOIZHBc9TBoWOIjMKEvvYt8QSXN1cwytziDBY2ujK8/SrHZvOqz50LCMNeJfDpNLs5n+ABomQqFSdZdj+B3eChx7ru8s382uYFOnGJcZBCcP7HNVMside3bSwLXnj/jaT2Q/J9qXI35BzWitepx3MCETfuhGq6B064m0k+686LdEwN+ScA7YAFyBdKSfoESqjlVBB7/0oXCm97o3UGHvXEzzqCqeQrz9V3hXZ4NGOiCflqFYYkQNFx/yOk1PgVQCPHtoIcOb7cn6x2r+0DHMbqq/1GC8KPJES2krpTTEEYJoNiNw772E1oy6z1mhmXQRfVxWEVenXlcYlKJwh22Zugm/XkbPq8Fmk8UayQ+M3NeWgSJ4sgTlDFdmNWjEi0YVB46cgB08Mz0TcxmDFg4MZ9kPUvh9m/pQuIi1zpK3gDP9kLpY=
   file_glob: true
   file: products/*
   skip_cleanup: true
